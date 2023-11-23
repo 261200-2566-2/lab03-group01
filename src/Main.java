@@ -2,16 +2,29 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.print("Hello and welcome!");
-
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
-
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        Hero h1 = new Hero("A"); //Create Object Hero name A
+        Hero h2 = new Hero("B"); //Create Object Hero name B
+        h1.equipSword("ThepMorana"); //Hero A equip sword name "ThepMorana"
+        h1.level_UP(); //Hero A level Up
+        h1.getInfo(); //Show information about hero A
+        h2.equipShield("Captain Shield"); //Hero B equip shield name "Captain Shield"
+        h2.getInfo();//Show information about hero B
+        h1.Attack(h2); //Hero A use sword attack Hero B use shield
+        h1.Sword_levelUp(); //Hero A enhance the sword
+        h1.Attack(h2); //Hero A use sword attack Hero B use shield
+        h2.equipSword("Beach"); //Hero B change shield to sword name "Beach"
+        h2.Attack(h1); //Hero B use sword attack Hero A use sword
+        h1.Attack(h2); //Hero A use sword attack Hero B use sword
+        h1.Attack(h2); //Hero A use sword attack Hero B use sword
+        h1.Attack(h2); //Hero A use sword attack Hero B use sword
+        h1.Attack(h2); //Hero A use sword attack Hero B use sword
+        h1.Attack(h2); //Hero A use sword attack Hero B use sword
+        h1.Attack(h2); //Hero A use sword attack Hero B use sword
+        h1.Attack(h2); //Hero A use sword attack Hero B use sword
+        h1.Attack(h2); //Hero A use sword attack Hero B use sword
+        h2.unequip(); //Hero B unequip sword
+        h2.getInfo(); //Get information about hero B
+        h1.Attack(h2); //Hero A use sword attack Hero B use sword
+        h1.Attack(h2); //Hero A use sword attack Hero B use sword
     }
 }
